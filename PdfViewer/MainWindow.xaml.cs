@@ -37,7 +37,7 @@ namespace PdfViewer
             int height = (int) document.Pages[0].Height;
 
             WriteableBitmap image = document.Render(0, width, height);
-            image.Save(pngDocumentPath);
+            image.SaveToPng(pngDocumentPath);
 
         }
     }

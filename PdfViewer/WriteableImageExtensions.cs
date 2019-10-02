@@ -10,7 +10,7 @@ namespace PdfViewer
 {
     public static class WriteableImageExtensions
     {
-        public static void Save(this WriteableBitmap image,string path)
+        public static void SaveToPng(this WriteableBitmap image,string path)
         {
             using (var stream = File.OpenWrite(path))
             {
